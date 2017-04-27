@@ -11,7 +11,7 @@
     "sinon-stub-promise": "^4.0.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha tests.js"
   },
   "repository": {
     "type": "git",
