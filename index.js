@@ -1,8 +1,14 @@
-'use strict'
+"use strict";
 
-const axios = require('axios');
+const axios = require("axios");
 
 const baseUrl = "http://api.icndb.com/";
+
+function _callAxios(url) {
+  axios.get(url).then((response) => {
+    return response.data;
+  });
+}
 
 function getRandomJoke() {
   const url = baseUrl+"jokes/random/";
@@ -19,7 +25,7 @@ function getRandomJokes(number) {
 function getJoke(id) {
   const url = baseUrl+"jokes/"+id
 
-  return _callAxios(url)
+  return _callAxios(url);
 }
 
 function getNumberOfJokes() {
@@ -34,17 +40,10 @@ function getCategories() {
   return _callAxios(url);
 }
 
-function _callAxios(url) {
-  axios.get(url).then(response => {
-    return response.data
-  });
-}
-
-
 // export the module
 module.exports = {
-    getRandomJoke: getRandomJoke,
-    getRandomJokes: getRandomJokes,
-    getNumberOfJokes: getNumberOfJokes,
-    getCategories: getCategories
+    getRandomJoke: getRandomJoke(),
+    getRandomJokes: getRandomJokes(),
+    getNumberOfJokes: getNumberOfJokes(),
+    getCategories: getCategories()
 };
