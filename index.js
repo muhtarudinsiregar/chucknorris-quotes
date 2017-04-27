@@ -17,13 +17,13 @@ function getRandomJoke() {
 }
 
 function getRandomJokes(number) {
-  const url = baseUrl+"jokes/random/"+number
+  const url = baseUrl+"jokes/random/"+number;
 
   return _callAxios(url);
 }
 
 function getJoke(id) {
-  const url = baseUrl+"jokes/"+id
+  const url = baseUrl+"jokes/"+id;
 
   return _callAxios(url);
 }
