@@ -5,9 +5,7 @@ const axios = require("axios");
 const baseUrl = "http://api.icndb.com/";
 
 function _callAxios(url) {
-  axios.get(url).then((response) => {
-    return response.data;
-  });
+  return axios.get(url);
 }
 
 function getRandomJoke() {
@@ -42,8 +40,8 @@ function getCategories() {
 
 // export the module
 module.exports = {
-    getRandomJoke: getRandomJoke(),
-    getRandomJokes: getRandomJokes(),
-    getNumberOfJokes: getNumberOfJokes(),
-    getCategories: getCategories()
+    getRandomJoke: getRandomJoke,
+    getRandomJokes: getRandomJokes,
+    getNumberOfJokes: getNumberOfJokes,
+    getCategories: getCategories
 };
