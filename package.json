@@ -7,11 +7,12 @@
     "axios": "^0.16.1"
   },
   "devDependencies": {
-    "mocha": "^3.3.0",
-    "sinon-stub-promise": "^4.0.0"
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0"
   },
   "scripts": {
-    "test": "mocha tests.js"
+    "test": "mocha tests.js",
+    "test:watch": "mocha tests.js -w"
   },
   "repository": {
     "type": "git",
