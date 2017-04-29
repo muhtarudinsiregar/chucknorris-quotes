@@ -1,11 +1,10 @@
 const chai = require("chai");
 const CNJokes = require("./index.js");
 
-const sinon     = require("sinon");
 
 describe("get chucknorris joke", function() {
-  let sandbox;
-  let server;
+
+
   beforeEach(() => {
     expect = chai.expect;
     assert = chai.assert;
