@@ -1,7 +1,7 @@
 {
-  "name": "chucknorris-joke-node",
-  "version": "1.0.0",
-  "description": "node-chucknorris-joke lib for http://www.icndb.com/api/",
+  "name": "chucknorris-quotes",
+  "version": "1.0.1",
+  "description": "chucknorris-joke lib for http://www.icndb.com/api/",
   "main": "index.js",
   "dependencies": {
     "axios": "^0.16.1"
